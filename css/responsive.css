@@ -1,0 +1,227 @@
+
+
+
+@media (min-width:356px) and (max-width:787px){
+    .container{
+        padding: 0 3.5vw;
+    }
+
+    
+    .gallery{
+        display: none;
+    }
+    .gallery2{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 98%;
+    }
+    .gallery2 > * {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .immage {
+        position: relative;
+        border-radius: var(--index);
+        max-height: 100%;
+        width: 100%;
+        height: auto;
+        margin-bottom: var(--gallery-gap);
+    }
+
+
+    .scrollline {
+        display: none;
+    }
+    .hero {
+        width: calc(var(--index) * 36);
+        position: absolute;
+        left: calc(var(--index) * 1);
+        top: 22vh;
+        z-index: -1;
+    }
+    .main-title {
+        font-size: calc(var(--index) * 6.75);
+    }
+    
+    nav {
+        margin: calc(var(--index) / 10);
+        background:none;
+        padding: calc(var(--index) / 8);
+        padding-left: calc(var(--index) * 2);
+    
+        .menuItems {
+          list-style: none;
+          display: flex;
+          justify-content: center;
+
+      
+          li {
+            position: relative;
+            margin: calc(var(--index));
+      
+            a {
+              text-decoration: none;
+              color: #cdc6c3;
+              font-size: calc(var(--index) * 1.5);
+              font-weight: 500;
+              transition: all 0.5s ease-in-out;
+              position: relative;
+              text-transform: uppercase;
+
+              &::before {
+                content: attr(data-item);
+                transition: 0.5s;
+                color: #8254ff;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 0;
+                overflow: hidden;
+              }
+      
+              &:hover {
+                &::before {
+                  width: 100%;
+                  transition: all 0.5s ease-in-out;
+                 }
+               }
+             }
+           }
+        }
+    }
+
+
+
+
+    .card_container {
+        min-width: 70vw;
+        min-height: calc(var(--index) * 26);
+        border-radius: 5px;
+        margin-bottom: calc(var(--index) * 15);
+    }
+    .side {
+        padding: calc(var(--index) * -8);
+        border-radius: 10px;
+    }
+    .card_content {
+        margin-top: 9px;
+        transform: translatez(170px) scale(0.77) ;
+        line-height: 1.5em;
+    }
+    .card_content p {
+        margin-top: calc(var(--index) * 3);
+        line-height: calc(var(--index) * 2);
+        font-size: calc(var(--index) * 1.45);
+    }
+    form label {
+        margin: calc(var(--index) * .8) 0;
+        font-size: calc(var(--index) * 1.2);
+    }
+    form input {
+        font-size: calc(var(--index) * 1.1);
+    }
+    form textarea {
+        font-size: calc(var(--index) * 1.1);
+    }
+    .card_back_button{
+        font-size: calc(var(--index) * 1.8);
+        min-width: 23vw;
+    }
+    form input,
+    form textarea {
+	    padding: 2px;
+    }
+    .card_back_button{
+        font-size: calc(var(--index) * 1.8);
+        min-width: calc(var(--index) );
+    }
+}
+
+
+
+
+@media (min-width:788px) and (max-width:991px) {
+    .container{
+        padding: 0 4vw;
+    }
+
+    .card_container {
+        min-height: calc(var(--index)*23.5 );
+        margin-bottom: calc(var(--index)*12);
+    }
+    form input,
+    form textarea {
+	    padding: 3px;
+    }
+    .card_content p {
+        line-height: calc(var(--index) * 2);
+        font-size: calc(var(--index) * 1.3);
+    }
+}
+
+
+
+
+@media (min-width:992px) and (max-width:1099px) {
+    .container{
+        padding: 0 4.5vw;
+    }
+
+    nav {
+        padding-right: 0;
+    }
+    .card_container {
+        margin-bottom: calc(var(--index)*10);
+    }
+    form input,
+    form textarea {
+	    padding: 4px;
+    }
+}
+
+
+
+
+@media (min-width:1100px) and (max-width:1299px) {
+    form label {
+        margin: calc(var(--index) * 1) 0;
+        font-size: calc(var(--index) * 1.2);
+    }
+    form input {
+        font-size: calc(var(--index) * 1.1);
+    }
+    form textarea {
+        font-size: calc(var(--index) * 1.1);
+    }
+    .card_back_button{
+        font-size: calc(var(--index) * 1.8);
+        min-width: 23vw;
+    }
+
+    form input,
+    form textarea {
+	    padding: 6px;
+    }
+}
+@media (min-width:1300px) {
+    form label {
+        margin: calc(var(--index) * 1) 0;
+        font-size: calc(var(--index) * 1.2);
+    }
+    form input {
+        font-size: calc(var(--index) * 1.1);
+    }
+    form textarea {
+        font-size: calc(var(--index) * 1.1);
+    }
+    .card_back_button{
+        font-size: calc(var(--index) * 1.8);
+        min-width: 30vw;
+    }
+}
